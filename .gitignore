@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.cache/
+.venv/
+venv/
+
+# outputs
+out/
+tests/__pycache__/
+*.png
+*.jpg
+*.bmp
+!docs/*.png
+!examples/*.png
+
+# local runtime (not part of the repo)
+runtime/
+
+# local scratch
+hw/
+
+# NI-sample-derived donor/blank files: bootstrap locally (tools/bootstrap_donors.py)
+data/donors/
+data/blank.ms14
+data/SOURCES.md
+data/SOURCES.json
+data/donors/SOURCES.md
+data/donors/SOURCES.json

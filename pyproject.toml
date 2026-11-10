@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multisim-mcp"
+version = "0.1.0"
+description = "MCP server for building and simulating circuits in Multisim"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Aruvelut111" }]
+keywords = ["mcp", "multisim", "electronics", "spice", "simulation", "eda"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+dependencies = ["mcp>=1.0"]
+
+[project.urls]
+Homepage = "https://github.com/Aruvelut111/multisim-mcp"
+Issues = "https://github.com/Aruvelut111/multisim-mcp/issues"
+
+[project.scripts]
+multisim-mcp = "multisim_mcp.__main__:main"
+
+[tool.setuptools]
+packages = ["multisim_mcp", "multisim_mcp.ms14"]
+
+[tool.setuptools.package-data]
+multisim_mcp = ["*.py"]
